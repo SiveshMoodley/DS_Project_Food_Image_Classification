@@ -15,7 +15,7 @@ Source: MIT Professional Education
 
 Type: Educational / Synthetic Dataset
 
-The dataset represents images of food. The dataset contains borrower and loan information including:
+The dataset represents images of food in .img format.
 - 
 
 The data is intended for educational and model development rather than commercial credit decisions. No personal or real customer information is included.

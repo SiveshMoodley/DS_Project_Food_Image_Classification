@@ -1,12 +1,14 @@
 # Food Image Classification
 
 ## Project Overview
-- 
+- Built a deep learning image classifier to recognise three food categories: Bread, Soup and Vegetable-Fruit
+- Implemented a full workflow including image loading, resizing, normalisation and one-hot label encoding for multi-class classification
+- Trained and iterated on multiple Convolutional Neural Network architectures, improving generalisation through dropout regularisation and architectural tuning to reduce overfitting 
 
 ## Code and Resources
 Python Version: 3.10
 
-Packages: pandas, numpy, matplotlib, seaborn, scikit-learn, imbalanced-learn, xgboost
+Packages: pandas, numpy, matplotlib, seaborn, opencv-python, scikit-learn, tensorflow
 
 Python Requirements: pip install -r requirements.txt
 

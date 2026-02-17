@@ -61,7 +61,7 @@ Models were evaluated using Accuracy, Precision, Recall and F1 Score metrics, wi
 - Model 3: 77.97%
 
 Model 3 achieved the highest overall test accuracy and demonstrated improved generalisation compared to earlier iterations. The detailed classification performance:
-- Class-level results:
+- Per-class results:
   - Bread: Precision 0.68 | Recall 0.75 | F1 Score 0.71
   - Soup: Precision 0.81 | Recall 0.82 | F1-score 0.82
   - Vegetable-Fruit: Precision 0.93 | Recall 0.73 | F1-score 0.82
@@ -71,4 +71,17 @@ Model 3 achieved the highest overall test accuracy and demonstrated improved gen
 Performance reflects strong classification capability for the majority class (Soup) and high precision for Vegetable-Fruit, with some recall limitations influenced by class imbalance.
 
 ## Project Evaluation
-- 
+- Implemented a structured image preprocessing workflow (resizing, normalisation, encoding) to prepare raw .img files for CNN training
+- Developed a CNN-based multi-class classifier achieving 78% test accuracy across three food categories
+- Improved model performance through iterative architectural tuning and dropout regularisation (≈66% → 78%)
+
+Limitations:
+- Dataset imbalance may bias predictions toward the majority class
+- Model performance may vary with changes in lighting, angle, or image quality
+- Training was performed on a relatively small dataset, limiting feature diversity
+
+Future Improvements:
+- Implement data augmentation to improve robustness and effective dataset size
+- Apply class weighting to better handle imbalance during training
+- Explore transfer learning architectures (e.g MobileNet, EfficientNet) to leverage pre-trained feature extraction and potentially improve accuracy
+- Perform k-fold cross-validation for more robust generalisation assessment
